@@ -1,0 +1,8 @@
+kernel vec4 heating(sampler src, float percentage)
+{
+	vec4 temperature;
+	
+	temperature = sample(src, samplerCoord(src));
+	temperature.z = temperature.z * percentage;
+	return temperature;
+}

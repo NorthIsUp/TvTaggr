@@ -1,0 +1,1203 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 44;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		AC1F71B60D0391EB00FD9494 /* Prefs */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = AC1F71C80D03922D00FD9494 /* Build configuration list for PBXAggregateTarget "Prefs" */;
+			buildPhases = (
+			);
+			dependencies = (
+				AC1F71C10D0391FD00FD9494 /* PBXTargetDependency */,
+				AC1F71BF0D0391FD00FD9494 /* PBXTargetDependency */,
+				AC1F71BD0D0391FD00FD9494 /* PBXTargetDependency */,
+			);
+			name = Prefs;
+			productName = Prefs;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		AC0F662C0D0A0EDC00C6E44E /* GeneralPrefsPaneController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0F66270D0A0EB700C6E44E /* GeneralPrefsPaneController.m */; };
+		AC0F662D0D0A0EEC00C6E44E /* GrowlPrefsPaneController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0F66290D0A0EB700C6E44E /* GrowlPrefsPaneController.m */; };
+		AC0F662E0D0A0EF200C6E44E /* UpdatePrefsPaneController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0F662B0D0A0EB700C6E44E /* UpdatePrefsPaneController.m */; };
+		AC1F717A0D035ED100FD9494 /* GeneralPrefs-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC1F71780D035ED100FD9494 /* GeneralPrefs-Info.plist */; };
+		AC1F717B0D035ED100FD9494 /* GeneralPrefs.nib in Resources */ = {isa = PBXBuildFile; fileRef = AC1F71790D035ED100FD9494 /* GeneralPrefs.nib */; };
+		AC1F717F0D035EF400FD9494 /* GrowlPrefs-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC1F717D0D035EF400FD9494 /* GrowlPrefs-Info.plist */; };
+		AC1F71800D035EF400FD9494 /* GrowlPrefs.nib in Resources */ = {isa = PBXBuildFile; fileRef = AC1F717E0D035EF400FD9494 /* GrowlPrefs.nib */; };
+		AC1F71850D035F2600FD9494 /* badge_sparkle.png in Resources */ = {isa = PBXBuildFile; fileRef = AC1F71820D035F2600FD9494 /* badge_sparkle.png */; };
+		AC1F71860D035F2600FD9494 /* UpdatePrefs-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC1F71830D035F2600FD9494 /* UpdatePrefs-Info.plist */; };
+		AC1F71870D035F2600FD9494 /* UpdatePrefs.nib in Resources */ = {isa = PBXBuildFile; fileRef = AC1F71840D035F2600FD9494 /* UpdatePrefs.nib */; };
+		AC1F71940D03606E00FD9494 /* GeneralPrefs.tiff in Resources */ = {isa = PBXBuildFile; fileRef = AC1F71580D035DE400FD9494 /* GeneralPrefs.tiff */; };
+		AC1F71A50D0360A700FD9494 /* UpdatePrefs.tiff in Resources */ = {isa = PBXBuildFile; fileRef = AC1F71640D035DE500FD9494 /* UpdatePrefs.tiff */; };
+		AC1F71A60D0360B300FD9494 /* GrowlPrefs.tiff in Resources */ = {isa = PBXBuildFile; fileRef = AC1F71590D035DE400FD9494 /* GrowlPrefs.tiff */; };
+		AC1F71FF0D03A33000FD9494 /* Bug.png in Resources */ = {isa = PBXBuildFile; fileRef = AC1F71FE0D03A33000FD9494 /* Bug.png */; };
+		AC1F72040D03A39A00FD9494 /* Bug.png in Resources */ = {isa = PBXBuildFile; fileRef = AC1F71FE0D03A33000FD9494 /* Bug.png */; };
+		AC1F720D0D03A94D00FD9494 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC1F720C0D03A94D00FD9494 /* WebKit.framework */; };
+		AC1F72250D03B01700FD9494 /* Email.png in Resources */ = {isa = PBXBuildFile; fileRef = AC1F72240D03B01700FD9494 /* Email.png */; };
+		AC23D0020D00784900D90BEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC23D0000D00784900D90BEA /* main.m */; };
+		AC23D0CE0D0087CD00D90BEA /* reportBug.gif in Resources */ = {isa = PBXBuildFile; fileRef = AC23D0CD0D0087CD00D90BEA /* reportBug.gif */; };
+		AC2C7F8F0CE658CB00F48B49 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B97324FDCFA39411CA2CEA /* AppKit.framework */; };
+		AC2C7FAA0CE658D000F48B49 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13E42FB307B3F0F600E4EEF1 /* CoreData.framework */; };
+		AC2C802A0CE658D500F48B49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B97325FDCFA39411CA2CEA /* Foundation.framework */; };
+		AC463A390D0234870075B10B /* GeneralPrefs.preferencePane in Resources */ = {isa = PBXBuildFile; fileRef = AC4639EA0D0215EC0075B10B /* GeneralPrefs.preferencePane */; };
+		AC463A500D024CBE0075B10B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC463A4F0D024CBE0075B10B /* Cocoa.framework */; };
+		AC463A6E0D0251D40075B10B /* NPEPreferencePaneController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6414E20D01FEC9002135D2 /* NPEPreferencePaneController.m */; };
+		AC463AFB0D0261A20075B10B /* NPEPreferencePaneController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6414E20D01FEC9002135D2 /* NPEPreferencePaneController.m */; };
+		AC463AFD0D0261A20075B10B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC463A4F0D024CBE0075B10B /* Cocoa.framework */; };
+		AC463C550D02702C0075B10B /* NPEPreferencePaneController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6414E20D01FEC9002135D2 /* NPEPreferencePaneController.m */; };
+		AC463C570D02702C0075B10B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC463A4F0D024CBE0075B10B /* Cocoa.framework */; };
+		AC5AA2740CDB88E700A93FB2 /* TableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5AA2730CDB88E700A93FB2 /* TableViewDataSource.m */; };
+		AC5AA2E40CDBA4FD00A93FB2 /* TVMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5AA2E30CDBA4FD00A93FB2 /* TVMovie.m */; };
+		AC6412EB0D01FC1E002135D2 /* NPEController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6412EA0D01FC1E002135D2 /* NPEController.m */; };
+		AC6414E00D01FDAB002135D2 /* SS_PrefsController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6414DD0D01FDAB002135D2 /* SS_PrefsController.m */; };
+		AC6414E30D01FEC9002135D2 /* NPEPreferencePaneController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6414E20D01FEC9002135D2 /* NPEPreferencePaneController.m */; };
+		AC6414E60D0200FC002135D2 /* NPEPrefsController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6414E50D0200FC002135D2 /* NPEPrefsController.m */; };
+		AC683B670D0280880097AB38 /* GrowlPrefs.preferencePane in Resources */ = {isa = PBXBuildFile; fileRef = AC463B020D0261A20075B10B /* GrowlPrefs.preferencePane */; };
+		AC683B680D0280880097AB38 /* UpdatePrefs.preferencePane in Resources */ = {isa = PBXBuildFile; fileRef = AC463C5C0D02702C0075B10B /* UpdatePrefs.preferencePane */; };
+		AC7CB0B00CD02AC000083630 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC7CB0AF0CD02AC000083630 /* QuickTime.framework */; };
+		AC7CB0DA0CD02D2200083630 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC7CB0D90CD02D2200083630 /* QTKit.framework */; };
+		AC8A092F0D0CC17800D8CCE3 /* TVRageInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8A092E0D0CC17800D8CCE3 /* TVRageInterface.m */; };
+		AC908C890D0073DF007F7AA5 /* Growl-WithInstaller.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC908C860D0073DF007F7AA5 /* Growl-WithInstaller.framework */; };
+		AC908C8A0D0073DF007F7AA5 /* OgreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC908C870D0073DF007F7AA5 /* OgreKit.framework */; };
+		AC908C8B0D0073DF007F7AA5 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC908C880D0073DF007F7AA5 /* Sparkle.framework */; };
+		AC908E3D0D0073FA007F7AA5 /* Growl-WithInstaller.framework in Copy Linked Libraries */ = {isa = PBXBuildFile; fileRef = AC908C860D0073DF007F7AA5 /* Growl-WithInstaller.framework */; };
+		AC908E3E0D0073FA007F7AA5 /* OgreKit.framework in Copy Linked Libraries */ = {isa = PBXBuildFile; fileRef = AC908C870D0073DF007F7AA5 /* OgreKit.framework */; };
+		AC908E3F0D0073FA007F7AA5 /* Sparkle.framework in Copy Linked Libraries */ = {isa = PBXBuildFile; fileRef = AC908C880D0073DF007F7AA5 /* Sparkle.framework */; };
+		AC908E590D007586007F7AA5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D1107310486CEB800E47090 /* Info.plist */; };
+		AC91CDA00CC95E110076EB9B /* AtomicParsley in Resources */ = {isa = PBXBuildFile; fileRef = AC91CD9F0CC95E110076EB9B /* AtomicParsley */; };
+		AC91CDA30CC95E760076EB9B /* AtomicParsleyController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC91CDA20CC95E760076EB9B /* AtomicParsleyController.m */; };
+		AC91CDA60CC95E850076EB9B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC91CDA50CC95E850076EB9B /* ViewController.m */; };
+		ACEBA9BA0CE761AD00462CE1 /* TVGrowlController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEBA9B90CE761AD00462CE1 /* TVGrowlController.m */; };
+		ACFABD620CE031F700CF8440 /* TvTaggr.icns in Resources */ = {isa = PBXBuildFile; fileRef = ACFABD610CE031F700CF8440 /* TvTaggr.icns */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC1F71BA0D0391F200FD9494 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC1F71B60D0391EB00FD9494;
+			remoteInfo = Prefs;
+		};
+		AC1F71BC0D0391FD00FD9494 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC463C4F0D02702C0075B10B;
+			remoteInfo = UpdatePrefs;
+		};
+		AC1F71BE0D0391FD00FD9494 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC463AF50D0261A20075B10B;
+			remoteInfo = GrowlPrefs;
+		};
+		AC1F71C00D0391FD00FD9494 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC4639E90D0215EC0075B10B;
+			remoteInfo = GeneralPrefs;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ACFABD930CE0DCF800CF8440 /* Copy Linked Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AC908E3D0D0073FA007F7AA5 /* Growl-WithInstaller.framework in Copy Linked Libraries */,
+				AC908E3E0D0073FA007F7AA5 /* OgreKit.framework in Copy Linked Libraries */,
+				AC908E3F0D0073FA007F7AA5 /* Sparkle.framework in Copy Linked Libraries */,
+			);
+			name = "Copy Linked Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = Resources/English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		29B97319FDCFA39411CA2CEA /* MainMenu.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = MainMenu.nib; path = Resources/English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* TvTaggr⇡.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TvTaggr⇡.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC0F66260D0A0EB700C6E44E /* GeneralPrefsPaneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralPrefsPaneController.h; sourceTree = "<group>"; };
+		AC0F66270D0A0EB700C6E44E /* GeneralPrefsPaneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralPrefsPaneController.m; sourceTree = "<group>"; };
+		AC0F66280D0A0EB700C6E44E /* GrowlPrefsPaneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlPrefsPaneController.h; sourceTree = "<group>"; };
+		AC0F66290D0A0EB700C6E44E /* GrowlPrefsPaneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowlPrefsPaneController.m; sourceTree = "<group>"; };
+		AC0F662A0D0A0EB700C6E44E /* UpdatePrefsPaneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdatePrefsPaneController.h; sourceTree = "<group>"; };
+		AC0F662B0D0A0EB700C6E44E /* UpdatePrefsPaneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdatePrefsPaneController.m; sourceTree = "<group>"; };
+		AC1F714C0D035DE400FD9494 /* AddressPrefs.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = AddressPrefs.tiff; sourceTree = "<group>"; };
+		AC1F714D0D035DE400FD9494 /* Advanced2Prefs.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Advanced2Prefs.tiff; sourceTree = "<group>"; };
+		AC1F714E0D035DE400FD9494 /* AdvancedPrefs.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = AdvancedPrefs.tiff; sourceTree = "<group>"; };
+		AC1F714F0D035DE400FD9494 /* AppearancePrefs.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = AppearancePrefs.tiff; sourceTree = "<group>"; };
+		AC1F71500D035DE400FD9494 /* AudioPrefs.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = AudioPrefs.tiff; sourceTree = "<group>"; };
+		AC1F71510D035DE400FD9494 /* AutoFillPrefs.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = AutoFillPrefs.tiff; sourceTree = "<group>"; };
+		AC1F71520D035DE400FD9494 /* BatchPrefs.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = BatchPrefs.tiff; sourceTree = "<group>"; };
+		AC1F71530D035DE400FD9494 /* ComposingPrefs.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ComposingPrefs.tiff; sourceTree = "<group>"; };
+		AC1F71540D035DE400FD9494 /* DisplayPrefs.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = DisplayPrefs.tiff; sourceTree = "<group>"; };
+		AC1F71550D035DE400FD9494 /* EditPrefs.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = EditPrefs.tiff; sourceTree = "<group>"; };
+		AC1F71560D035DE400FD9494 /* ExportPrefs.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ExportPrefs.tiff; sourceTree = "<group>"; };
+		AC1F71570D035DE400FD9494 /* FontsAndColorsPrefs.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = FontsAndColorsPrefs.tiff; sourceTree = "<group>"; };
+		AC1F71580D035DE400FD9494 /* GeneralPrefs.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = GeneralPrefs.tiff; sourceTree = "<group>"; };
+		AC1F71590D035DE400FD9494 /* GrowlPrefs.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = GrowlPrefs.tiff; sourceTree = "<group>"; };
+		AC1F715A0D035DE400FD9494 /* KeyPrefs.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = KeyPrefs.tiff; sourceTree = "<group>"; };
+		AC1F715B0D035DE400FD9494 /* KeysPrefs.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = KeysPrefs.tiff; sourceTree = "<group>"; };
+		AC1F715C0D035DE500FD9494 /* NetworkPrefs.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = NetworkPrefs.tiff; sourceTree = "<group>"; };
+		AC1F715D0D035DE500FD9494 /* PicturePrefs.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = PicturePrefs.tiff; sourceTree = "<group>"; };
+		AC1F715E0D035DE500FD9494 /* PublishPrefs.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = PublishPrefs.tiff; sourceTree = "<group>"; };
+		AC1F715F0D035DE500FD9494 /* RegistrationPrefs.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = RegistrationPrefs.tiff; sourceTree = "<group>"; };
+		AC1F71600D035DE500FD9494 /* SecurityPrefs.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = SecurityPrefs.tiff; sourceTree = "<group>"; };
+		AC1F71610D035DE500FD9494 /* ShellPrefs.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ShellPrefs.tiff; sourceTree = "<group>"; };
+		AC1F71620D035DE500FD9494 /* Update2Prefs.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Update2Prefs.tiff; sourceTree = "<group>"; };
+		AC1F71630D035DE500FD9494 /* Update3Prefs.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Update3Prefs.tiff; sourceTree = "<group>"; };
+		AC1F71640D035DE500FD9494 /* UpdatePrefs.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = UpdatePrefs.tiff; sourceTree = "<group>"; };
+		AC1F71650D035DE500FD9494 /* UserPrefs.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = UserPrefs.tiff; sourceTree = "<group>"; };
+		AC1F71660D035DE500FD9494 /* WebPrefs.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = WebPrefs.tiff; sourceTree = "<group>"; };
+		AC1F71780D035ED100FD9494 /* GeneralPrefs-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GeneralPrefs-Info.plist"; sourceTree = "<group>"; };
+		AC1F71790D035ED100FD9494 /* GeneralPrefs.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = GeneralPrefs.nib; sourceTree = "<group>"; };
+		AC1F717D0D035EF400FD9494 /* GrowlPrefs-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GrowlPrefs-Info.plist"; sourceTree = "<group>"; };
+		AC1F717E0D035EF400FD9494 /* GrowlPrefs.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = GrowlPrefs.nib; sourceTree = "<group>"; };
+		AC1F71820D035F2600FD9494 /* badge_sparkle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = badge_sparkle.png; sourceTree = "<group>"; };
+		AC1F71830D035F2600FD9494 /* UpdatePrefs-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "UpdatePrefs-Info.plist"; sourceTree = "<group>"; };
+		AC1F71840D035F2600FD9494 /* UpdatePrefs.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = UpdatePrefs.nib; sourceTree = "<group>"; };
+		AC1F71FE0D03A33000FD9494 /* Bug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bug.png; sourceTree = "<group>"; };
+		AC1F720C0D03A94D00FD9494 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = /System/Library/Frameworks/WebKit.framework; sourceTree = "<absolute>"; };
+		AC1F72240D03B01700FD9494 /* Email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Email.png; path = PreferencePanes/GeneralPrefs/Email.png; sourceTree = "<group>"; };
+		AC23D0000D00784900D90BEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AC23D0010D00784900D90BEA /* TvTaggr_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TvTaggr_Prefix.pch; sourceTree = "<group>"; };
+		AC23D0CD0D0087CD00D90BEA /* reportBug.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = reportBug.gif; path = Resources/reportBug.gif; sourceTree = "<group>"; };
+		AC4639EA0D0215EC0075B10B /* GeneralPrefs.preferencePane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeneralPrefs.preferencePane; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC463A4F0D024CBE0075B10B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		AC463B020D0261A20075B10B /* GrowlPrefs.preferencePane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrowlPrefs.preferencePane; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC463C5C0D02702C0075B10B /* UpdatePrefs.preferencePane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UpdatePrefs.preferencePane; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC5AA2720CDB88E700A93FB2 /* TableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewDataSource.h; sourceTree = "<group>"; };
+		AC5AA2730CDB88E700A93FB2 /* TableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewDataSource.m; sourceTree = "<group>"; };
+		AC5AA2E20CDBA4FD00A93FB2 /* TVMovie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVMovie.h; sourceTree = "<group>"; };
+		AC5AA2E30CDBA4FD00A93FB2 /* TVMovie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVMovie.m; sourceTree = "<group>"; };
+		AC6412E90D01FC1E002135D2 /* NPEController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPEController.h; sourceTree = "<group>"; };
+		AC6412EA0D01FC1E002135D2 /* NPEController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPEController.m; sourceTree = "<group>"; };
+		AC6414DD0D01FDAB002135D2 /* SS_PrefsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SS_PrefsController.m; sourceTree = "<group>"; };
+		AC6414DE0D01FDAB002135D2 /* SS_PrefsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SS_PrefsController.h; sourceTree = "<group>"; };
+		AC6414DF0D01FDAB002135D2 /* SS_PreferencePaneProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SS_PreferencePaneProtocol.h; sourceTree = "<group>"; };
+		AC6414E10D01FEC9002135D2 /* NPEPreferencePaneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPEPreferencePaneController.h; sourceTree = "<group>"; };
+		AC6414E20D01FEC9002135D2 /* NPEPreferencePaneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPEPreferencePaneController.m; sourceTree = "<group>"; };
+		AC6414E40D0200FC002135D2 /* NPEPrefsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPEPrefsController.h; sourceTree = "<group>"; };
+		AC6414E50D0200FC002135D2 /* NPEPrefsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPEPrefsController.m; sourceTree = "<group>"; };
+		AC7CB0AF0CD02AC000083630 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = /System/Library/Frameworks/QuickTime.framework; sourceTree = "<absolute>"; };
+		AC7CB0D90CD02D2200083630 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
+		AC8A092D0D0CC17800D8CCE3 /* TVRageInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVRageInterface.h; sourceTree = "<group>"; };
+		AC8A092E0D0CC17800D8CCE3 /* TVRageInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVRageInterface.m; sourceTree = "<group>"; };
+		AC908C860D0073DF007F7AA5 /* Growl-WithInstaller.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "Growl-WithInstaller.framework"; sourceTree = "<group>"; };
+		AC908C870D0073DF007F7AA5 /* OgreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OgreKit.framework; sourceTree = "<group>"; };
+		AC908C880D0073DF007F7AA5 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		AC91CD9F0CC95E110076EB9B /* AtomicParsley */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = AtomicParsley; path = Resources/AtomicParsley; sourceTree = "<group>"; };
+		AC91CDA10CC95E760076EB9B /* AtomicParsleyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AtomicParsleyController.h; sourceTree = "<group>"; };
+		AC91CDA20CC95E760076EB9B /* AtomicParsleyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AtomicParsleyController.m; sourceTree = "<group>"; };
+		AC91CDA40CC95E850076EB9B /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AC91CDA50CC95E850076EB9B /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		ACEBA9B80CE761AD00462CE1 /* TVGrowlController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVGrowlController.h; sourceTree = "<group>"; };
+		ACEBA9B90CE761AD00462CE1 /* TVGrowlController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVGrowlController.m; sourceTree = "<group>"; };
+		ACFABD610CE031F700CF8440 /* TvTaggr.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = TvTaggr.icns; path = Resources/TvTaggr.icns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC7CB0B00CD02AC000083630 /* QuickTime.framework in Frameworks */,
+				AC7CB0DA0CD02D2200083630 /* QTKit.framework in Frameworks */,
+				AC2C7F8F0CE658CB00F48B49 /* AppKit.framework in Frameworks */,
+				AC2C7FAA0CE658D000F48B49 /* CoreData.framework in Frameworks */,
+				AC2C802A0CE658D500F48B49 /* Foundation.framework in Frameworks */,
+				AC908C890D0073DF007F7AA5 /* Growl-WithInstaller.framework in Frameworks */,
+				AC908C8A0D0073DF007F7AA5 /* OgreKit.framework in Frameworks */,
+				AC908C8B0D0073DF007F7AA5 /* Sparkle.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC4639E80D0215EC0075B10B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC463A500D024CBE0075B10B /* Cocoa.framework in Frameworks */,
+				AC1F720D0D03A94D00FD9494 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC463AFC0D0261A20075B10B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC463AFD0D0261A20075B10B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC463C560D02702C0075B10B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC463C570D02702C0075B10B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AC0F66250D0A0EB700C6E44E /* Prefs Controllers */,
+				AC4639D40D0215740075B10B /* Prefs */,
+				AC91CDA10CC95E760076EB9B /* AtomicParsleyController.h */,
+				AC91CDA20CC95E760076EB9B /* AtomicParsleyController.m */,
+				AC5AA2720CDB88E700A93FB2 /* TableViewDataSource.h */,
+				AC5AA2730CDB88E700A93FB2 /* TableViewDataSource.m */,
+				AC5AA2E20CDBA4FD00A93FB2 /* TVMovie.h */,
+				AC5AA2E30CDBA4FD00A93FB2 /* TVMovie.m */,
+				AC91CDA40CC95E850076EB9B /* ViewController.h */,
+				AC91CDA50CC95E850076EB9B /* ViewController.m */,
+				ACEBA9B80CE761AD00462CE1 /* TVGrowlController.h */,
+				ACEBA9B90CE761AD00462CE1 /* TVGrowlController.m */,
+				AC8A092D0D0CC17800D8CCE3 /* TVRageInterface.h */,
+				AC8A092E0D0CC17800D8CCE3 /* TVRageInterface.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC1F720C0D03A94D00FD9494 /* WebKit.framework */,
+				AC463A4F0D024CBE0075B10B /* Cocoa.framework */,
+				AC7CB0D90CD02D2200083630 /* QTKit.framework */,
+				AC7CB0AF0CD02AC000083630 /* QuickTime.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* TvTaggr⇡.app */,
+				AC4639EA0D0215EC0075B10B /* GeneralPrefs.preferencePane */,
+				AC463B020D0261A20075B10B /* GrowlPrefs.preferencePane */,
+				AC463C5C0D02702C0075B10B /* UpdatePrefs.preferencePane */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* TVShowNamer */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				AC23CFFB0D0077FF00D90BEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = TVShowNamer;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AC1F72240D03B01700FD9494 /* Email.png */,
+				AC1F71700D035E3900FD9494 /* Prefs */,
+				AC23D0CD0D0087CD00D90BEA /* reportBug.gif */,
+				AC91CD9F0CC95E110076EB9B /* AtomicParsley */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				ACFABD610CE031F700CF8440 /* TvTaggr.icns */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC908C5A0D007388007F7AA5 /* Bundled Frameworks */,
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC0F66250D0A0EB700C6E44E /* Prefs Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AC0F66260D0A0EB700C6E44E /* GeneralPrefsPaneController.h */,
+				AC0F66270D0A0EB700C6E44E /* GeneralPrefsPaneController.m */,
+				AC0F66280D0A0EB700C6E44E /* GrowlPrefsPaneController.h */,
+				AC0F66290D0A0EB700C6E44E /* GrowlPrefsPaneController.m */,
+				AC0F662A0D0A0EB700C6E44E /* UpdatePrefsPaneController.h */,
+				AC0F662B0D0A0EB700C6E44E /* UpdatePrefsPaneController.m */,
+			);
+			path = "Prefs Controllers";
+			sourceTree = "<group>";
+		};
+		AC1F714B0D035DE400FD9494 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				AC1F714C0D035DE400FD9494 /* AddressPrefs.tiff */,
+				AC1F714D0D035DE400FD9494 /* Advanced2Prefs.tiff */,
+				AC1F714E0D035DE400FD9494 /* AdvancedPrefs.tiff */,
+				AC1F714F0D035DE400FD9494 /* AppearancePrefs.tiff */,
+				AC1F71500D035DE400FD9494 /* AudioPrefs.tiff */,
+				AC1F71510D035DE400FD9494 /* AutoFillPrefs.tiff */,
+				AC1F71520D035DE400FD9494 /* BatchPrefs.tiff */,
+				AC1F71530D035DE400FD9494 /* ComposingPrefs.tiff */,
+				AC1F71540D035DE400FD9494 /* DisplayPrefs.tiff */,
+				AC1F71550D035DE400FD9494 /* EditPrefs.tiff */,
+				AC1F71560D035DE400FD9494 /* ExportPrefs.tiff */,
+				AC1F71570D035DE400FD9494 /* FontsAndColorsPrefs.tiff */,
+				AC1F71580D035DE400FD9494 /* GeneralPrefs.tiff */,
+				AC1F71590D035DE400FD9494 /* GrowlPrefs.tiff */,
+				AC1F715A0D035DE400FD9494 /* KeyPrefs.tiff */,
+				AC1F715B0D035DE400FD9494 /* KeysPrefs.tiff */,
+				AC1F715C0D035DE500FD9494 /* NetworkPrefs.tiff */,
+				AC1F715D0D035DE500FD9494 /* PicturePrefs.tiff */,
+				AC1F715E0D035DE500FD9494 /* PublishPrefs.tiff */,
+				AC1F715F0D035DE500FD9494 /* RegistrationPrefs.tiff */,
+				AC1F71600D035DE500FD9494 /* SecurityPrefs.tiff */,
+				AC1F71610D035DE500FD9494 /* ShellPrefs.tiff */,
+				AC1F71620D035DE500FD9494 /* Update2Prefs.tiff */,
+				AC1F71630D035DE500FD9494 /* Update3Prefs.tiff */,
+				AC1F71640D035DE500FD9494 /* UpdatePrefs.tiff */,
+				AC1F71650D035DE500FD9494 /* UserPrefs.tiff */,
+				AC1F71660D035DE500FD9494 /* WebPrefs.tiff */,
+			);
+			name = Icons;
+			path = Resources/Prefs;
+			sourceTree = "<group>";
+		};
+		AC1F71700D035E3900FD9494 /* Prefs */ = {
+			isa = PBXGroup;
+			children = (
+				AC1F71810D035F2600FD9494 /* UpdatePrefs */,
+				AC1F717C0D035EF400FD9494 /* GrowlPrefs */,
+				AC1F71770D035ED100FD9494 /* GeneralPrefs */,
+				AC1F714B0D035DE400FD9494 /* Icons */,
+			);
+			name = Prefs;
+			sourceTree = "<group>";
+		};
+		AC1F71770D035ED100FD9494 /* GeneralPrefs */ = {
+			isa = PBXGroup;
+			children = (
+				AC1F71FE0D03A33000FD9494 /* Bug.png */,
+				AC1F71780D035ED100FD9494 /* GeneralPrefs-Info.plist */,
+				AC1F71790D035ED100FD9494 /* GeneralPrefs.nib */,
+			);
+			name = GeneralPrefs;
+			path = PreferencePanes/GeneralPrefs;
+			sourceTree = "<group>";
+		};
+		AC1F717C0D035EF400FD9494 /* GrowlPrefs */ = {
+			isa = PBXGroup;
+			children = (
+				AC1F717D0D035EF400FD9494 /* GrowlPrefs-Info.plist */,
+				AC1F717E0D035EF400FD9494 /* GrowlPrefs.nib */,
+			);
+			name = GrowlPrefs;
+			path = PreferencePanes/GrowlPrefs;
+			sourceTree = "<group>";
+		};
+		AC1F71810D035F2600FD9494 /* UpdatePrefs */ = {
+			isa = PBXGroup;
+			children = (
+				AC1F71820D035F2600FD9494 /* badge_sparkle.png */,
+				AC1F71830D035F2600FD9494 /* UpdatePrefs-Info.plist */,
+				AC1F71840D035F2600FD9494 /* UpdatePrefs.nib */,
+			);
+			name = UpdatePrefs;
+			path = PreferencePanes/UpdatePrefs;
+			sourceTree = "<group>";
+		};
+		AC23CFFB0D0077FF00D90BEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AC23D0000D00784900D90BEA /* main.m */,
+				AC23D0010D00784900D90BEA /* TvTaggr_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		AC4639D40D0215740075B10B /* Prefs */ = {
+			isa = PBXGroup;
+			children = (
+				AC6414DE0D01FDAB002135D2 /* SS_PrefsController.h */,
+				AC6414DD0D01FDAB002135D2 /* SS_PrefsController.m */,
+				AC6414DF0D01FDAB002135D2 /* SS_PreferencePaneProtocol.h */,
+				AC6412E90D01FC1E002135D2 /* NPEController.h */,
+				AC6412EA0D01FC1E002135D2 /* NPEController.m */,
+				AC6414E40D0200FC002135D2 /* NPEPrefsController.h */,
+				AC6414E50D0200FC002135D2 /* NPEPrefsController.m */,
+				AC6414E10D01FEC9002135D2 /* NPEPreferencePaneController.h */,
+				AC6414E20D01FEC9002135D2 /* NPEPreferencePaneController.m */,
+			);
+			name = Prefs;
+			sourceTree = "<group>";
+		};
+		AC908C5A0D007388007F7AA5 /* Bundled Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC908C860D0073DF007F7AA5 /* Growl-WithInstaller.framework */,
+				AC908C870D0073DF007F7AA5 /* OgreKit.framework */,
+				AC908C880D0073DF007F7AA5 /* Sparkle.framework */,
+			);
+			name = "Bundled Frameworks";
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* TvTaggr⇡ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "TvTaggr⇡" */;
+			buildPhases = (
+				ACFABD930CE0DCF800CF8440 /* Copy Linked Libraries */,
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				ACFABD210CE026BC00CF8440 /* Script: Bump Version */,
+				AC850F1F0CE26ACD00384AE3 /* Script: Build dmg */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC1F71BB0D0391F200FD9494 /* PBXTargetDependency */,
+			);
+			name = "TvTaggr⇡";
+			productInstallPath = "$(HOME)/Applications";
+			productName = TVShowNamer;
+			productReference = 8D1107320486CEB800E47090 /* TvTaggr⇡.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AC4639E90D0215EC0075B10B /* GeneralPrefs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC4639EF0D0215ED0075B10B /* Build configuration list for PBXNativeTarget "GeneralPrefs" */;
+			buildPhases = (
+				AC4639E60D0215EC0075B10B /* Resources */,
+				AC4639E70D0215EC0075B10B /* Sources */,
+				AC4639E80D0215EC0075B10B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeneralPrefs;
+			productName = GeneralPrefs;
+			productReference = AC4639EA0D0215EC0075B10B /* GeneralPrefs.preferencePane */;
+			productType = "com.apple.product-type.bundle";
+		};
+		AC463AF50D0261A20075B10B /* GrowlPrefs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC463AFE0D0261A20075B10B /* Build configuration list for PBXNativeTarget "GrowlPrefs" */;
+			buildPhases = (
+				AC463AF60D0261A20075B10B /* Resources */,
+				AC463AF90D0261A20075B10B /* Sources */,
+				AC463AFC0D0261A20075B10B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GrowlPrefs;
+			productName = GeneralPrefs;
+			productReference = AC463B020D0261A20075B10B /* GrowlPrefs.preferencePane */;
+			productType = "com.apple.product-type.bundle";
+		};
+		AC463C4F0D02702C0075B10B /* UpdatePrefs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC463C580D02702C0075B10B /* Build configuration list for PBXNativeTarget "UpdatePrefs" */;
+			buildPhases = (
+				AC463C500D02702C0075B10B /* Resources */,
+				AC463C530D02702C0075B10B /* Sources */,
+				AC463C560D02702C0075B10B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UpdatePrefs;
+			productName = GeneralPrefs;
+			productReference = AC463C5C0D02702C0075B10B /* UpdatePrefs.preferencePane */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TvTaggr" */;
+			compatibilityVersion = "Xcode 3.0";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* TVShowNamer */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* TvTaggr⇡ */,
+				AC1F71B60D0391EB00FD9494 /* Prefs */,
+				AC4639E90D0215EC0075B10B /* GeneralPrefs */,
+				AC463AF50D0261A20075B10B /* GrowlPrefs */,
+				AC463C4F0D02702C0075B10B /* UpdatePrefs */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC1F72040D03A39A00FD9494 /* Bug.png in Resources */,
+				AC683B670D0280880097AB38 /* GrowlPrefs.preferencePane in Resources */,
+				AC683B680D0280880097AB38 /* UpdatePrefs.preferencePane in Resources */,
+				AC463A390D0234870075B10B /* GeneralPrefs.preferencePane in Resources */,
+				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				AC91CDA00CC95E110076EB9B /* AtomicParsley in Resources */,
+				ACFABD620CE031F700CF8440 /* TvTaggr.icns in Resources */,
+				AC908E590D007586007F7AA5 /* Info.plist in Resources */,
+				AC23D0CE0D0087CD00D90BEA /* reportBug.gif in Resources */,
+				AC1F72250D03B01700FD9494 /* Email.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC4639E60D0215EC0075B10B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC1F71940D03606E00FD9494 /* GeneralPrefs.tiff in Resources */,
+				AC1F717A0D035ED100FD9494 /* GeneralPrefs-Info.plist in Resources */,
+				AC1F717B0D035ED100FD9494 /* GeneralPrefs.nib in Resources */,
+				AC1F71FF0D03A33000FD9494 /* Bug.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC463AF60D0261A20075B10B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC1F71A60D0360B300FD9494 /* GrowlPrefs.tiff in Resources */,
+				AC1F717F0D035EF400FD9494 /* GrowlPrefs-Info.plist in Resources */,
+				AC1F71800D035EF400FD9494 /* GrowlPrefs.nib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC463C500D02702C0075B10B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC1F71A50D0360A700FD9494 /* UpdatePrefs.tiff in Resources */,
+				AC1F71850D035F2600FD9494 /* badge_sparkle.png in Resources */,
+				AC1F71860D035F2600FD9494 /* UpdatePrefs-Info.plist in Resources */,
+				AC1F71870D035F2600FD9494 /* UpdatePrefs.nib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AC850F1F0CE26ACD00384AE3 /* Script: Build dmg */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Script: Build dmg";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ $CONFIGURATION = \"Release\" ] ; then\n\n\tBUILD_VERSION=`agvtool vers -terse`\n\tMARKT_VERSION=`agvtool mvers -terse1`\n\tRELEASE_FILENAME=TvTaggr_$BUILD_VERSION\n\tRELEASE_NAME=\"TvTaggr⇡ $MARKT_VERSION\"\n\tFILE_NAME=$PRODUCT_NAME.app\n\n\tBUILD_DIR=build\n\tTAGGR_DIR=TvTaggr\n\tART_DIR=artwork\n\n\tBACKGROUND=$ART_DIR/dmg/growlDMGBackground.png\n\n\n\tcd dmg\n\n\tcp -r $CONFIGURATION_BUILD_DIR/$FILE_NAME $TAGGR_DIR\n\tmkdir $TAGGR_DIR/.background || TRUE\n\tcp $BACKGROUND $TAGGR_DIR/.background\n\t./ensureCustomIconsExtracted $ART_DIR\n\t./make-diskimage.sh $BUILD_DIR/$RELEASE_FILENAME.dmg $TAGGR_DIR $RELEASE_NAME dmg_growl.applescript $ART_DIR\nfi";
+			showEnvVarsInLog = 0;
+		};
+		ACFABD210CE026BC00CF8440 /* Script: Bump Version */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Script: Bump Version";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ $CONFIGURATION != \"Release\" ] ; then\n\t/Developer/usr/bin/agvtool next-version\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC91CDA30CC95E760076EB9B /* AtomicParsleyController.m in Sources */,
+				AC91CDA60CC95E850076EB9B /* ViewController.m in Sources */,
+				AC5AA2740CDB88E700A93FB2 /* TableViewDataSource.m in Sources */,
+				AC5AA2E40CDBA4FD00A93FB2 /* TVMovie.m in Sources */,
+				ACEBA9BA0CE761AD00462CE1 /* TVGrowlController.m in Sources */,
+				AC23D0020D00784900D90BEA /* main.m in Sources */,
+				AC6412EB0D01FC1E002135D2 /* NPEController.m in Sources */,
+				AC6414E00D01FDAB002135D2 /* SS_PrefsController.m in Sources */,
+				AC6414E30D01FEC9002135D2 /* NPEPreferencePaneController.m in Sources */,
+				AC6414E60D0200FC002135D2 /* NPEPrefsController.m in Sources */,
+				AC8A092F0D0CC17800D8CCE3 /* TVRageInterface.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC4639E70D0215EC0075B10B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC463A6E0D0251D40075B10B /* NPEPreferencePaneController.m in Sources */,
+				AC0F662C0D0A0EDC00C6E44E /* GeneralPrefsPaneController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC463AF90D0261A20075B10B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC463AFB0D0261A20075B10B /* NPEPreferencePaneController.m in Sources */,
+				AC0F662D0D0A0EEC00C6E44E /* GrowlPrefsPaneController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC463C530D02702C0075B10B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC463C550D02702C0075B10B /* NPEPreferencePaneController.m in Sources */,
+				AC0F662E0D0A0EF200C6E44E /* UpdatePrefsPaneController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC1F71BB0D0391F200FD9494 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC1F71B60D0391EB00FD9494 /* Prefs */;
+			targetProxy = AC1F71BA0D0391F200FD9494 /* PBXContainerItemProxy */;
+		};
+		AC1F71BD0D0391FD00FD9494 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC463C4F0D02702C0075B10B /* UpdatePrefs */;
+			targetProxy = AC1F71BC0D0391FD00FD9494 /* PBXContainerItemProxy */;
+		};
+		AC1F71BF0D0391FD00FD9494 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC463AF50D0261A20075B10B /* GrowlPrefs */;
+			targetProxy = AC1F71BE0D0391FD00FD9494 /* PBXContainerItemProxy */;
+		};
+		AC1F71C10D0391FD00FD9494 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC4639E90D0215EC0075B10B /* GeneralPrefs */;
+			targetProxy = AC1F71C00D0391FD00FD9494 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* InfoPlist.strings */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		29B97318FDCFA39411CA2CEA /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29B97319FDCFA39411CA2CEA /* MainMenu.nib */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC1F71B70D0391EC00FD9494 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = Prefs;
+			};
+			name = Debug;
+		};
+		AC1F71B80D0391EC00FD9494 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = Prefs;
+			};
+			name = Development;
+		};
+		AC1F71B90D0391EC00FD9494 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = Prefs;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		AC4639EC0D0215ED0075B10B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "PreferencePanes/${PRODUCT_NAME}/${PRODUCT_NAME}-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = GeneralPrefs;
+				WRAPPER_EXTENSION = preferencePane;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		AC4639ED0D0215ED0075B10B /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "PreferencePanes/${PRODUCT_NAME}/${PRODUCT_NAME}-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = GeneralPrefs;
+				WRAPPER_EXTENSION = preferencePane;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		AC4639EE0D0215ED0075B10B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "PreferencePanes/${PRODUCT_NAME}/${PRODUCT_NAME}-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = GeneralPrefs;
+				WRAPPER_EXTENSION = preferencePane;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		AC463AFF0D0261A20075B10B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "PreferencePanes/${PRODUCT_NAME}/${PRODUCT_NAME}-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = GrowlPrefs;
+				WRAPPER_EXTENSION = preferencePane;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		AC463B000D0261A20075B10B /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "PreferencePanes/${PRODUCT_NAME}/${PRODUCT_NAME}-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = GrowlPrefs;
+				WRAPPER_EXTENSION = preferencePane;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		AC463B010D0261A20075B10B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "PreferencePanes/${PRODUCT_NAME}/${PRODUCT_NAME}-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = GrowlPrefs;
+				WRAPPER_EXTENSION = preferencePane;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		AC463C590D02702C0075B10B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "PreferencePanes/${PRODUCT_NAME}/${PRODUCT_NAME}-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = UpdatePrefs;
+				WRAPPER_EXTENSION = preferencePane;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		AC463C5A0D02702C0075B10B /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "PreferencePanes/${PRODUCT_NAME}/${PRODUCT_NAME}-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = UpdatePrefs;
+				WRAPPER_EXTENSION = preferencePane;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		AC463C5B0D02702C0075B10B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "PreferencePanes/${PRODUCT_NAME}/${PRODUCT_NAME}-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = UpdatePrefs;
+				WRAPPER_EXTENSION = preferencePane;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		ACE3BA1E0CE26EB00015542C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+			};
+			name = Release;
+		};
+		ACE3BA1F0CE26EB00015542C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 559;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../../objcregex/build/Release\"",
+					"\"$(DEVELOPER_DIR)/Local/Frameworks\"",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TvTaggr_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = "TvTaggr⇡";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = TvTaggr;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 559;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../../objcregex/build/Release\"",
+					"\"$(DEVELOPER_DIR)/Local/Frameworks\"",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TvTaggr_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = "TvTaggr⇡";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = TvTaggr;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					i386,
+					ppc,
+				);
+				CURRENT_PROJECT_VERSION = 559;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../../objcregex/build/Release\"",
+					"\"$(DEVELOPER_DIR)/Local/Frameworks\"",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TvTaggr_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = "TvTaggr⇡";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = TvTaggr;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Development;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+			};
+			name = Development;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC1F71C80D03922D00FD9494 /* Build configuration list for PBXAggregateTarget "Prefs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC1F71B70D0391EC00FD9494 /* Debug */,
+				AC1F71B80D0391EC00FD9494 /* Development */,
+				AC1F71B90D0391EC00FD9494 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Development;
+		};
+		AC4639EF0D0215ED0075B10B /* Build configuration list for PBXNativeTarget "GeneralPrefs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC4639EC0D0215ED0075B10B /* Debug */,
+				AC4639ED0D0215ED0075B10B /* Development */,
+				AC4639EE0D0215ED0075B10B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Development;
+		};
+		AC463AFE0D0261A20075B10B /* Build configuration list for PBXNativeTarget "GrowlPrefs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC463AFF0D0261A20075B10B /* Debug */,
+				AC463B000D0261A20075B10B /* Development */,
+				AC463B010D0261A20075B10B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Development;
+		};
+		AC463C580D02702C0075B10B /* Build configuration list for PBXNativeTarget "UpdatePrefs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC463C590D02702C0075B10B /* Debug */,
+				AC463C5A0D02702C0075B10B /* Development */,
+				AC463C5B0D02702C0075B10B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Development;
+		};
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "TvTaggr⇡" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Development */,
+				ACE3BA1F0CE26EB00015542C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Development;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TvTaggr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Development */,
+				ACE3BA1E0CE26EB00015542C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Development;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

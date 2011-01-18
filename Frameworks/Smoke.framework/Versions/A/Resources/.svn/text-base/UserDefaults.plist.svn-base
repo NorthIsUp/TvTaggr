@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BrownianStrength</key>
+	<real>0.0016442953050136567</real>
+	<key>BuoyancyWeight</key>
+	<real>0.11744966357946396</real>
+	<key>CoolingFrameCount</key>
+	<integer>120</integer>
+	<key>DiffusionWeight</key>
+	<real>0.23825503885746002</real>
+	<key>FPS</key>
+	<real>10</real>
+	<key>GustFrameCount</key>
+	<integer>10</integer>
+	<key>GustStrength</key>
+	<real>0.0312</real>
+	<key>HeatingFrameCount</key>
+	<integer>50</integer>
+	<key>InitialTemperature</key>
+	<real>0.12986577451229095</real>
+	<key>MousePressureRadius</key>
+	<real>16.0</real>
+	<key>MouseSmokeRadius</key>
+	<real>0.0</real>
+	<key>OutputBlur</key>
+	<real>1.436241626739502</real>
+	<key>SmokeCool</key>
+	<data>
+	BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2JqZWN0AIWEAWMBhARm
+	ZmZmAAAAg4/CdT2G
+	</data>
+	<key>SmokeHot</key>
+	<data>
+	BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2JqZWN0AIWEAWMBhARm
+	ZmZmg8E6Wj+D8aEDP4NJAwE+g1yPQj6G
+	</data>
+	<key>SmokeMedium</key>
+	<data>
+	BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2JqZWN0AIWEAWMBhARm
+	ZmZmg+/H/j2DB8XhPYPUm14+g+F6FD+G
+	</data>
+    <key>SmokeUsesMicrophone</key>
+    <true/>
+	<key>TemperatureDiffusion</key>
+	<real>0.047315436601638797</real>
+	<key>TemperatureRandomness</key>
+	<real>0.0038590602576732639</real>
+	<key>WindDirection</key>
+	<real>0.27628422835562672</real>
+	<key>WindWeight</key>
+	<real>0.000</real>
+	<key>VelocityDamping</key>
+	<real>0.000</real>
+</dict>
+</plist>

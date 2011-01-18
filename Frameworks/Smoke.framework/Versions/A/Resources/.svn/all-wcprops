@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/vcs/svn/north.svn/!svn/ver/24/TvTaggr/Frameworks/Smoke.framework/Versions/A/Resources
+END
+UserDefaults.plist
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/vcs/svn/north.svn/!svn/ver/24/TvTaggr/Frameworks/Smoke.framework/Versions/A/Resources/UserDefaults.plist
+END
+add_random_temperature.cikernel
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/vcs/svn/north.svn/!svn/ver/24/TvTaggr/Frameworks/Smoke.framework/Versions/A/Resources/add_random_temperature.cikernel
+END
+heat_diffusion.cikernel
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/vcs/svn/north.svn/!svn/ver/24/TvTaggr/Frameworks/Smoke.framework/Versions/A/Resources/heat_diffusion.cikernel
+END
+Info.plist
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/vcs/svn/north.svn/!svn/ver/24/TvTaggr/Frameworks/Smoke.framework/Versions/A/Resources/Info.plist
+END
+mouse_position.cikernel
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/vcs/svn/north.svn/!svn/ver/24/TvTaggr/Frameworks/Smoke.framework/Versions/A/Resources/mouse_position.cikernel
+END
+apply_heating_element.cikernel
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/vcs/svn/north.svn/!svn/ver/24/TvTaggr/Frameworks/Smoke.framework/Versions/A/Resources/apply_heating_element.cikernel
+END
+velocity_damping.cikernel
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/vcs/svn/north.svn/!svn/ver/24/TvTaggr/Frameworks/Smoke.framework/Versions/A/Resources/velocity_damping.cikernel
+END
+heat_map.cikernel
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/vcs/svn/north.svn/!svn/ver/24/TvTaggr/Frameworks/Smoke.framework/Versions/A/Resources/heat_map.cikernel
+END
+velocity.cikernel
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/vcs/svn/north.svn/!svn/ver/24/TvTaggr/Frameworks/Smoke.framework/Versions/A/Resources/velocity.cikernel
+END
+brownian.cikernel
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/vcs/svn/north.svn/!svn/ver/24/TvTaggr/Frameworks/Smoke.framework/Versions/A/Resources/brownian.cikernel
+END
+heating.cikernel
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/vcs/svn/north.svn/!svn/ver/24/TvTaggr/Frameworks/Smoke.framework/Versions/A/Resources/heating.cikernel
+END
+boundary.cikernel
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/vcs/svn/north.svn/!svn/ver/24/TvTaggr/Frameworks/Smoke.framework/Versions/A/Resources/boundary.cikernel
+END

@@ -1,0 +1,62 @@
+const int kWidth  = 256;  // kSmokeContentSize.width
+const int kHeight = 128;  // kSmokeContentSize.height
+const float kAmbientDensity = 2.0;
+const float kTimestep = 2.0;
+
+
+kernel vec4 velocity(sampler src, float buoyancyWeight, float diffusionWeight, vec2 forceVector)
+{
+	vec2 xy = samplerCoord(src);
+	vec4 p;
+	float right, top, left, bottom, temperature, density;
+	
+	p = sample(src, samplerCoord(src));
+	temperature = p.z;
+	density = p.w;
+	
+	// - Reminder:  
+	//   x component is velocity.x
+	//   y component is velocity.y
+	//   z component is temperature
+	//   w component is atmospheric density
+	
+	// - Find the velocity change due to buoyancy.  Buoyancy tends to make warmer particles 
+	//   move upwards.  Each particle moves upwards at the same rate, so the resultant velocity
+	//   does not depend on the density
+
+	p.y += buoyancyWeight * temperature;
+	
+	// - Find the velocity change due to diffusion.  Diffusion tends to make regions of higher 
+	//   pressure move towards regions of lower pressure.  The gradient of the density gives the 
+	//   direction from the current point to the point of highest density.  Ambiant density is 8.0.
+	
+	right  = (int(xy.x) >= kWidth - 1)   ? kAmbientDensity : sample(src, xy+vec2(+1.0, 0.0)).w;
+	top    = (int(xy.y) >= kHeight - 1)  ? kAmbientDensity : sample(src, xy+vec2(0.0, +1.0)).w;
+	left   = (int(xy.x) <= 0)            ? kAmbientDensity : sample(src, xy+vec2(-1.0, 0.0)).w;
+	bottom = (int(xy.y) <= 0)            ? kAmbientDensity : sample(src, xy+vec2(0.0, -1.0)).w;
+		
+	// - Get a unit vector that points in the direction of max density increase
+	
+	float length = length(vec2(right - left, top - bottom));
+	vec2 unitVector = vec2(
+		(length == 0.0) ? 0.0 : ((right - left) / length), 
+		(length == 0.0) ? 0.0 : ((top - bottom) / length)
+	);
+
+	// - Get the amount of density that's going to move.  This includes an implicit
+	//   multiplication by the mesh constant 1.0 =  timestep / meshSpacing ** 2
+	
+	float magnitude = -diffusionWeight * (right + top + left + bottom - 4.0 * density);
+
+	// - And add the change into our velocity vector
+	 
+	p.x -= magnitude * unitVector.x;
+	p.y += magnitude * unitVector.y;
+
+	// - Find the velocity due to external forces
+	
+	vec2 windVelocity = (density == 0.0) ? vec2(0.0) : (forceVector / density);
+	p.xy += windVelocity;
+	
+	return p;
+}

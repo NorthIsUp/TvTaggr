@@ -1,0 +1,33 @@
+const float kHighPressure = 1.0;
+const float kLowPressure = 0.0;
+const float kHighTemperature = 0.14;
+const float kVelocityMagnitude = 0.5;
+const float kVelocityMax = 0.5;
+
+kernel vec4 mouse_position(sampler src, vec2 position, vec2 lastPosition, float outerPressureRadius, float outerSmokeRadius)
+{
+	vec2 xy, direction;
+	vec4 pixel;
+	float dNow, dLast;
+	
+	xy = destCoord();
+		
+	dNow = distance(xy, position);
+	dLast = distance(xy, lastPosition);
+	
+	direction = position - lastPosition;
+	float directionLength = length(direction);
+	direction = (directionLength == 0.0) ? vec2(0.0, 0.0) : (direction/directionLength);
+	direction = (directionLength > 500.0) ? vec2(0.0, 0.0) : direction;
+	
+	float innerPressureRadius = outerPressureRadius * 0.66;
+	float innerSmokeRadius = outerSmokeRadius * 0.66;
+	direction = direction * (1.0 - smoothstep(innerPressureRadius, outerPressureRadius, dNow));
+	
+	pixel = sample(src, samplerCoord(src));
+	pixel.w = pixel.w + (kHighPressure - pixel.w) * (1.0 - smoothstep(innerPressureRadius, outerPressureRadius, dNow));
+	pixel.z = pixel.z + (kHighTemperature - pixel.z) * (1.0 - smoothstep(innerSmokeRadius, outerSmokeRadius, dNow));
+
+	pixel.xy = pixel.xy + clamp(kVelocityMagnitude * direction, -kVelocityMax, kVelocityMax);
+	return pixel;
+}

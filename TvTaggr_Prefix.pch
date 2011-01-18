@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'TVShowNamer' target in the 'TVShowNamer' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+	#import <OgreKit/OgreKit.h>
+#endif

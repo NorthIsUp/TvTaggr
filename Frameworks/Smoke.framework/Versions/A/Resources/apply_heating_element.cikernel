@@ -1,0 +1,9 @@
+kernel vec4 apply_heating_element(sampler particles, sampler heatMap, vec2 p)
+{
+	vec4 particle, heatPoint;
+	
+	particle = sample(particles, samplerCoord(particles));
+	heatPoint = sample(heatMap, samplerCoord(heatMap));
+	particle.z = heatPoint.z;
+	return particle;
+}

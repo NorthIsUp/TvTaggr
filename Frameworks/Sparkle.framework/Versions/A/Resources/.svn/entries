@@ -1,0 +1,177 @@
+10
+
+dir
+46
+http://source.northisup.com/vcs/svn/north.svn/TvTaggr/Frameworks/Sparkle.framework/Versions/A/Resources
+http://source.northisup.com/vcs/svn/north.svn
+
+
+
+2007-12-10T04:33:43.264279Z
+42
+adam
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dc3acca7-953e-0410-b55b-cfa2c268da36
+
+ja.lproj
+dir
+
+zh_TW.lproj
+dir
+
+he.lproj
+dir
+
+id.lproj
+dir
+
+SUModelTranslation.plist
+file
+
+
+
+
+2009-08-18T13:32:31.000000Z
+a6eb692b6bf9aa7870d3380189c4f904
+2007-12-10T04:33:43.264279Z
+42
+adam
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5558
+
+fi.lproj
+dir
+
+Info.plist
+file
+
+
+
+
+2009-08-18T13:32:31.000000Z
+3c4b1a7f6337dc223756fd699e8b224e
+2007-12-10T04:33:43.264279Z
+42
+adam
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+654
+
+zh_CN.lproj
+dir
+
+en.lproj
+dir
+
+cs.lproj
+dir
+
+es.lproj
+dir
+
+fr.lproj
+dir
+
+nl.lproj
+dir
+
+ko.lproj
+dir
+
+pl.lproj
+dir
+
+cy.lproj
+dir
+
+is.lproj
+dir
+
+th.lproj
+dir
+
+hu.lproj
+dir
+
+it.lproj
+dir
+
+no.lproj
+dir
+
+SUStatus.nib
+dir
+
+sk.lproj
+dir
+
+ca.lproj
+dir
+
+da.lproj
+dir
+
+tr.lproj
+dir
+
+ru.lproj
+dir
+
+de.lproj
+dir
+
+sv.lproj
+dir
+

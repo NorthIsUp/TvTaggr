@@ -1,0 +1,20 @@
+const vec4 kAmbientColor = vec4(0.0,    0.0,    0.0,    0.0);
+
+
+kernel vec4 heat_map(sampler src, __color coolColor, __color mediumColor, __color hotColor)
+{
+	vec4 point, color;
+	float temperature;
+	
+	point = sample(src, samplerCoord(src));
+	temperature = point.z;
+	
+	color =	(temperature <=  0.01) ? (kAmbientColor) : 
+			(temperature <=  0.06) ? mix(kAmbientColor, coolColor,   (temperature - 0.01) / 0.05) : 
+			(temperature <=  0.14) ? mix(coolColor,     mediumColor, (temperature - 0.06) / 0.08) : 
+			(temperature <=  0.19) ? mix(mediumColor,   hotColor,    (temperature - 0.14) / 0.05) : 
+									 (hotColor);
+	color = clamp(color, 0.0, 1.0);
+	color = premultiply(color);
+	return color;
+}

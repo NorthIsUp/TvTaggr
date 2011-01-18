@@ -1,0 +1,9 @@
+kernel vec4 add_random_temperature(sampler imgSampler, sampler tempSampler, float weight)
+{
+	vec4 temperature, pixel;
+	
+	temperature = sample(tempSampler, samplerCoord(tempSampler));
+	pixel = sample(imgSampler, samplerCoord(imgSampler));
+	temperature.z = clamp(temperature.z + weight * (pixel.r * 2.0 - 1.0), -1.0, 1.0);
+	return temperature;
+}

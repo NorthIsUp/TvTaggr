@@ -1,0 +1,10 @@
+kernel vec4 brownian(sampler imgSampler, sampler randomSampler, float weight)
+{
+	vec4 pixel, random;
+	
+	pixel = sample(imgSampler, samplerCoord(imgSampler));
+	random = sample(randomSampler, samplerCoord(randomSampler));
+	float newTemperature = pixel.z + weight * (random.r * 2.0 - 1.0);
+	pixel.z = (pixel.z >= 0.05) ? max(0.05, newTemperature) : newTemperature;
+	return pixel;
+}

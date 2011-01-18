@@ -1,0 +1,6 @@
+kernel vec4 velocity_damping(sampler particles, float damping)
+{
+	vec4 particle = sample(particles, samplerCoord(particles));
+	particle.xy = particle.xy - particle.xy * damping;
+	return particle;
+}

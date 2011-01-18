@@ -1,0 +1,25 @@
+const int kWidth  = 256;  // kSmokeContentSize.width
+const int kHeight = 128;  // kSmokeContentSize.height
+const float kAmbientDensity = 2.0;
+
+
+kernel vec4 boundary(sampler particles)
+{
+	vec2 xy = destCoord();
+	bool inBounds =		((int(xy.x) > 0) ? 
+							((int(xy.x) < kWidth - 1) ? 
+								((int(xy.y) > 0) ? 
+									(int(xy.y) < kHeight - 1)
+								: false)
+							 : false)
+						: false);
+	
+	vec4 particle = sample(particles, xy);
+
+	particle.x = (inBounds) ? particle.x		: 0.0;
+	particle.y = (inBounds) ? particle.y		: 0.0;
+	particle.z = (inBounds) ? particle.z		: -0.1;
+	particle.w = (inBounds) ? particle.w		: kAmbientDensity;
+
+	return particle;
+}

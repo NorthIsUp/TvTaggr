@@ -1,0 +1,23 @@
+const float kTimestep = 2.0;
+
+
+kernel vec4 heat_diffusion(sampler src, float diffusion)
+{
+	vec2 xy = destCoord();
+	vec4 p;
+	float t01, t10, t12, t21;
+	float delta;
+	
+	p = sample(src, samplerCoord(src));
+
+	t01 = sample(src, samplerTransform(src, xy+vec2(0.0, -1.0))).z;
+	t10 = sample(src, samplerTransform(src, xy+vec2(-1.0, 0.0))).z;
+	t12 = sample(src, samplerTransform(src, xy+vec2(+1.0, 0.0))).z;
+	t21 = sample(src, samplerTransform(src, xy+vec2(0.0, +1.0))).z;
+
+	// delta includes multiplication by the mesh constant 1.0 =  timestep / meshSpacing ** 2
+    delta = diffusion * (t01 + t10 + t12 + t21 - 4.0 * p.z) * kTimestep;
+
+	p.z = clamp(p.z + delta, -1.0, +1.0);
+	return p;
+}
